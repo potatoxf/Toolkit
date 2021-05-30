@@ -1,0 +1,4 @@
+dependencies {
+    compile project(":extensions:toolkit-extension-poi")
+    compile "cn.afterturn:easypoi-spring-boot-starter:4.3.0"
+}

@@ -1,0 +1,10 @@
+subprojects {
+    dependencies {
+        compile project(":toolkit-basic")
+        if (project.name != "system-basic") {
+            compile project(":infrastructures:system-basic")
+        }
+        compile 'com.baomidou:mybatis-plus:3.4.2'
+    }
+}
+

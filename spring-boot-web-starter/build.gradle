@@ -1,0 +1,9 @@
+subprojects {
+    dependencies {
+        compile "org.springframework.boot:spring-boot-starter:2.4.4"
+    }
+    configurations {
+        compile.exclude group: 'javax.servlet', module: 'javax.servlet-api'
+    }
+}
+

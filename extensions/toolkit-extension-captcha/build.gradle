@@ -1,0 +1,4 @@
+dependencies {
+    compile project(":toolkit-basic")
+    implementation group: 'com.github.penggle', name: 'kaptcha', version: '2.3.2'
+}

@@ -1,0 +1,81 @@
+rootProject.name = 'Toolkit'
+include 'toolkit-basic'
+include 'toolkit-web'
+include 'toolkit-cli'
+
+include 'components:toolkit-component-model'
+findProject(':components:toolkit-component-model')?.name = 'toolkit-component-model'
+
+include 'extensions:toolkit-extension-pdf'
+findProject(':extensions:toolkit-extension-pdf')?.name = 'toolkit-extension-pdf'
+
+include 'extensions:toolkit-extension-poi'
+findProject(':extensions:toolkit-extension-poi')?.name = 'toolkit-extension-poi'
+
+include 'extensions:toolkit-extension-video'
+findProject(':extensions:toolkit-extension-video')?.name = 'toolkit-extension-video'
+
+include 'extensions:toolkit-extension-system'
+findProject(':extensions:toolkit-extension-system')?.name = 'toolkit-extension-system'
+
+include 'extensions:toolkit-extension-office'
+findProject(':extensions:toolkit-extension-office')?.name = 'toolkit-extension-office'
+
+include 'extensions:toolkit-extension-template'
+findProject(':extensions:toolkit-extension-template')?.name = 'toolkit-extension-template'
+
+include 'extensions:toolkit-extension-captcha'
+findProject(':extensions:toolkit-extension-captcha')?.name = 'toolkit-extension-captcha'
+
+
+include 'extensions:toolkit-extension-pinyin'
+findProject(':extensions:toolkit-extension-pinyin')?.name = 'toolkit-extension-pinyin'
+
+//基础设施
+
+include 'infrastructures:system-setting'
+findProject(':infrastructures:system-setting')?.name = 'system-setting'
+
+include 'infrastructures:system-enumerate'
+findProject(':infrastructures:system-enumerate')?.name = 'system-enumerate'
+
+include 'infrastructures:system-task'
+findProject(':infrastructures:system-task')?.name = 'system-task'
+
+//Spring Boot Starter
+
+include 'spring-boot-starter:all-spring-boot-starter'
+findProject(':spring-boot-starter:all-spring-boot-starter')?.name = 'all-spring-boot-starter'
+
+include 'spring-boot-starter:poi-spring-boot-starter'
+findProject(':spring-boot-starter:poi-spring-boot-starter')?.name = 'poi-spring-boot-starter'
+
+include 'spring-boot-starter:task-spring-boot-starter'
+findProject(':spring-boot-starter:task-spring-boot-starter')?.name = 'task-spring-boot-starter'
+
+include 'spring-boot-starter:mybatisplus-spring-boot-starter'
+findProject(':spring-boot-starter:mybatisplus-spring-boot-starter')?.name = 'mybatisplus-spring-boot-starter'
+
+//Web 项目
+
+include 'spring-boot-web-starter:file-online-preview-web-starter'
+findProject(':spring-boot-web-starter:file-online-preview-web-starter')?.name = 'file-online-preview-web-starter'
+
+include 'spring-boot-web-starter:admin-framework-web-starter'
+findProject(':spring-boot-web-starter:admin-framework-web-starter')?.name = 'admin-framework-web-starter'
+
+
+include 'spring-boot-web-starter:all-spring-boot-web-starter'
+findProject(':spring-boot-web-starter:all-spring-boot-web-starter')?.name = 'all-spring-boot-web-starter'
+
+include 'spring-boot-starter:captcha-spring-boot-starter'
+findProject(':spring-boot-starter:captcha-spring-boot-starter')?.name = 'captcha-spring-boot-starter'
+include 'infrastructures:system-message'
+findProject(':infrastructures:system-message')?.name = 'system-message'
+include 'infrastructures:system-template'
+findProject(':infrastructures:system-template')?.name = 'system-template'
+include 'infrastructures:system-basic'
+findProject(':infrastructures:system-basic')?.name = 'system-basic'
+include 'spring-boot-starter:setting-spring-boot-starter'
+findProject(':spring-boot-starter:setting-spring-boot-starter')?.name = 'setting-spring-boot-starter'
+

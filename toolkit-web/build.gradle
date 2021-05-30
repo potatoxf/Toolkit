@@ -1,0 +1,17 @@
+dependencies {
+    compile 'javax.activation:activation:1.1.1'
+    compile 'javax.xml.bind:jaxb-api:2.3.0'
+    compile 'com.sun.xml.bind:jaxb-core:2.3.0'
+    compile 'com.sun.xml.bind:jaxb-impl:2.3.0'
+    compile project(":toolkit-basic")
+    compile project(":extensions:toolkit-extension-video")
+    compile project(":extensions:toolkit-extension-pdf")
+    compile project(":extensions:toolkit-extension-poi")
+    compile project(":extensions:toolkit-extension-system")
+    compile project(":extensions:toolkit-extension-template")
+    compile project(":infrastructures:system-setting")
+    compile project(":infrastructures:system-enumerate")
+    compileOnly group: 'javax.servlet', name: 'javax.servlet-api', version: '4.0.1'
+    compile group: "com.google.protobuf", name: "protobuf-java", version: "3.15.6"
+    compile group: "com.google.protobuf", name: "protobuf-java-util", version: "3.15.6"
+}

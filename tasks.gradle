@@ -1,0 +1,42 @@
+ext {
+    task showProperties(group: "information") {
+        doLast {
+            showProp(System.getProperties())
+        }
+    }
+    task showExtension(group: "information") {
+        doLast {
+            rootProject.ext.each {
+                e ->
+                    showProp(e.getProperties())
+            }
+        }
+    }
+    task showGradleExtension(group: "information") {
+        doLast {
+            gradle.ext.each {
+                e ->
+                    showProp(e.getProperties())
+            }
+        }
+    }
+}
+
+static def showProp(properties) {
+    def split = repeat("=", 60)
+    println split
+    properties.each {
+        entry ->
+            print String.format("%-40s:%s%n", entry.key, entry.value)
+    }
+    println split
+}
+
+static def repeat(String str, int count) {
+    StringBuilder sb = new StringBuilder(str?.length() * count)
+    for (int i = 0; i < count; i++) {
+        sb.append(str)
+    }
+    return sb.toString()
+}
+

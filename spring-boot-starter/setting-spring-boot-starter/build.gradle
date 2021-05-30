@@ -1,0 +1,4 @@
+dependencies {
+    compile project(":infrastructures:system-setting")
+    compile project(":spring-boot-starter:mybatisplus-spring-boot-starter")
+}

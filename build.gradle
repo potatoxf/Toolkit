@@ -1,0 +1,36 @@
+apply from: "tasks.gradle"
+ext {
+    archBit = archBit()
+    os = os()
+    springBootVersion = "2.0.6.RELEASE"
+}
+
+allprojects {
+    apply from: "${rootProject.projectDir}/common.gradle"
+}
+
+subprojects {
+}
+
+/**
+ * 获取系统架构位数
+ * @return 系统架构位数
+ */
+static int archBit() {
+    def arch = System.getProperty("os.arch")
+    if (arch.contains("64")) {
+        return 64
+    }
+    return 32
+}
+/**
+ * 获取系统
+ * @return 系统
+ */
+static String os() {
+    def os = System.getProperty("os.name").toLowerCase()
+    if (os.contains("window")) {
+        return "win"
+    }
+    return "linux"
+}

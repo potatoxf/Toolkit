@@ -1,0 +1,7 @@
+dependencies {
+    compile project(":spring-boot-starter:poi-spring-boot-starter")
+    compile project(":spring-boot-starter:captcha-spring-boot-starter")
+    compile project(":spring-boot-starter:task-spring-boot-starter")
+    compile project(":spring-boot-starter:setting-spring-boot-starter")
+    compile project(":spring-boot-starter:mybatisplus-spring-boot-starter")
+}

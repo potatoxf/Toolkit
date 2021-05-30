@@ -1,0 +1,12 @@
+dependencies {
+    def easypoiVersion="4.3.0"
+    compile project(":components:toolkit-component-model")
+    implementation group: "org.apache.poi", name: "poi", version: "4.1.2"
+    implementation group: "org.apache.poi", name: "poi-ooxml", version: "4.1.2"
+    implementation group: "org.apache.poi", name: "poi-scratchpad", version: "4.1.2"
+    implementation group: "org.apache.poi", name: "poi-ooxml-schemas", version: "4.1.2"
+    compile "cn.afterturn:easypoi-base:${easypoiVersion}"
+    compile "cn.afterturn:easypoi-web:${easypoiVersion}"
+    compile "cn.afterturn:easypoi-annotation:${easypoiVersion}"
+
+}

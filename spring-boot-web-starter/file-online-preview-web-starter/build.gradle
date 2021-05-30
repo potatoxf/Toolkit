@@ -1,0 +1,32 @@
+dependencies {
+
+    compile project(":toolkit-web")
+    compile project(":extensions:toolkit-extension-office")
+    compile 'org.springframework.boot:spring-boot-starter-freemarker:2.4.2'
+    compile 'org.springframework.boot:spring-boot-starter-jetty:2.4.2'
+    compile 'org.springframework.boot:spring-boot-starter-web:2.4.2'
+    compile 'org.redisson:redisson:3.2.0'
+    compile 'org.apache.commons:commons-lang3:3.7'
+    compile 'org.apache.poi:poi:3.17'
+    compile 'org.apache.poi:poi-scratchpad:3.12'
+    compile 'fr.opensagres.xdocreport:org.apache.poi.xwpf.converter.core:1.0.5'
+    compile 'fr.opensagres.xdocreport:org.apache.poi.xwpf.converter.xhtml:1.0.5'
+    compile 'fr.opensagres.xdocreport:fr.opensagres.xdocreport.document:1.0.5'
+    compile 'org.apache.commons:commons-compress:1.19'
+    compile 'com.github.junrar:junrar:4.0.0'
+    compile 'org.tukaani:xz:1.8'
+    compile 'net.sourceforge.jchardet:jchardet:1.0'
+    compile 'antlr:antlr:2.7.7'
+    compile 'commons-cli:commons-cli:1.2'
+    compile 'commons-net:commons-net:3.6'
+    compile 'commons-io:commons-io:1.4'
+    compile 'com.thoughtworks.xstream:xstream:1.4.15'
+    compile 'org.apache.pdfbox:pdfbox:2.0.15'
+    compile 'org.apache.pdfbox:pdfbox-tools:2.0.15'
+    compile 'io.mola.galimatias:galimatias:0.2.1'
+    compile 'org.rocksdb:rocksdbjni:5.17.2'
+
+    compile fileTree(dir: 'lib', includes: ['*jar'])
+//    compile 'com.aspose:aspose-cad:19.9'
+//    compile 'cpdetector:cpdetector:1.04'
+}

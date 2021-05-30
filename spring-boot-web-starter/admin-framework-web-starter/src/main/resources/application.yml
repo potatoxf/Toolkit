@@ -1,0 +1,18 @@
+spring:
+  thymeleaf:
+    prefix: "classpath:/META-INF/templates/thymeleaf/"
+    suffix: ".html"
+    cache: false
+    check-template: false
+    check-template-location: false
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test?&useUnicode=true&characterEncoding=utf8&autoReconnect=true&failOverReadOnly=false&serverTimezone=GMT%2B8
+    username: root
+    password: root
+
+mybatis-plus:
+  configuration:
+    # 打印执行的SQL语句及返回的数据
+    #log-impl: org.apache.ibatis.logging.slf4j.Slf4jImpl
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

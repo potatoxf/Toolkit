@@ -1,0 +1,52 @@
+apply plugin: "java"
+apply plugin: "maven-publish"
+apply plugin: "idea"
+
+sourceCompatibility = 11
+targetCompatibility = 11
+
+group = "potatoxf"
+version = "1.0.0"
+
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}
+
+jar {
+    enabled = true
+}
+
+repositories {
+    mavenLocal()
+    maven { url "http://maven.aliyun.com/nexus/content/groups/public/" }
+    maven { url "http://maven.aliyun.com/nexus/content/repositories/jcenter" }
+    mavenCentral()
+}
+
+publishing {
+    publications {
+        Toolkit(MavenPublication) {
+            from components.java
+        }
+    }
+    repositories {
+        mavenLocal()
+    }
+}
+
+compileJava {
+    options.setCompilerArgs(["--add-exports=java.base/jdk.internal.misc=ALL-UNNAMED"])
+}
+
+dependencies {
+    compile "com.google.code.findbugs:jsr305:3.0.2"
+    compile "org.slf4j:slf4j-api:1.7.30"
+    testCompile "junit:junit:4.12"
+    compileOnly "org.projectlombok:lombok:1.18.20"
+}
+
+task listJars(description: "Display all compile jars.") {
+    doLast {
+        configurations.compile.each { File file -> println file.name }
+    }
+}

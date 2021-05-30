@@ -1,0 +1,16 @@
+dependencies {
+
+    compile project(":toolkit-web")
+    compile project(":spring-boot-starter:all-spring-boot-starter")
+
+    compile 'org.springframework.boot:spring-boot-starter-web:2.4.4'
+    compile 'org.springframework.boot:spring-boot-starter-jdbc:2.4.4'
+    compile 'org.springframework.boot:spring-boot-configuration-processor:2.4.4'
+
+    compile 'org.springframework.boot:spring-boot-devtools:2.4.4'
+
+
+    runtime group: 'mysql', name: 'mysql-connector-java', version: '8.0.24'
+
+    testCompile 'org.springframework.boot:spring-boot-starter-test:2.4.4'
+}

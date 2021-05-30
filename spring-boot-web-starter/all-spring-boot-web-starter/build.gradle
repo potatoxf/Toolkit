@@ -1,0 +1,5 @@
+dependencies {
+    compile project(":toolkit-web")
+    compile project(":spring-boot-web-starter:admin-framework-web-starter")
+    compile project(":spring-boot-web-starter:file-online-preview-web-starter")
+}

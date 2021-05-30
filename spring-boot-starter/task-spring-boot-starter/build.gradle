@@ -1,0 +1,5 @@
+dependencies {
+    compile project(":infrastructures:system-task")
+    compile "org.springframework.boot:spring-boot-starter-quartz:${springBootVersion}"
+    compile project(":spring-boot-starter:mybatisplus-spring-boot-starter")
+}

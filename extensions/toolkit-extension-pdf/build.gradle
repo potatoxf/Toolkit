@@ -1,0 +1,4 @@
+dependencies {
+    compile project(":components:toolkit-component-model")
+    implementation group: "org.apache.pdfbox", name: "pdfbox", version: "2.0.22"
+}
